@@ -1,0 +1,33 @@
+@domain=http://localhost:3000
+
+### read hosts
+
+GET {{domain}}/hosts
+
+### Pegar exepecifico
+
+GET {{domain}}/hosts/8b16
+
+### create a host
+
+POST {{domain}}/hosts
+Content-Type: application/json
+
+{
+    "Nome":"Júlio",
+    "Lema":"Tely minha casa minha vida"
+}
+
+### Atualizar
+
+PUT {{domain}}/hosts/1771
+Content-Type: application/json
+
+{
+    "Nome":"Jardson",
+    "Lema":"Fui tapeado"
+}
+
+###Apagar host
+
+DELETE {{domain}}/hosts/1771 
